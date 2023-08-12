@@ -64,7 +64,7 @@ content's blocks color #F0F0F0
 .header-hero {
   /* margin: 339px auto 0; */
   height: 450px;
-  background: url(../images/Hero.jpg) no-repeat center /cover;
+  background: url(../images/hero.jpg) no-repeat center /cover;
 }
 
 .about__box {
@@ -165,6 +165,23 @@ content's blocks color #F0F0F0
   }
 
   .footer__contact {
-    align-items: center;
+    text-align: center;
+  }
+
+  .header-hero {
+    height: 200px;
+  }
+
+  .nav__list {
+    padding-top: 40px;
+    gap: 15px;
+  }
+
+  .nav__logo {
+    height: 110px;
+  }
+
+  .footer-pic {
+    height: 90px;
   }
 }
