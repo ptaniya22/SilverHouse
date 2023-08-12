@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rob_Rg';
+  color: #808080;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header's menu  color #8C8A8A
+h2 color #4581B7
+text color #808080
+content's blocks color #F0F0F0
+ */
+
+.container {
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header__nav {
+  background: #fff;
+  padding: 50px 0 30px;
+}
+
+.nav__logo {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+  height: 151px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 79px 0 30px;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav__item-link:hover,
+.about__contact-link:hover {
+  color: #4581B7;
+}
+
+.nav__item-link {
+  color: #8C8A8A;
+  font-size: 18px;
+}
+
+.header-hero {
+  /* margin: 339px auto 0; */
+  height: 450px;
+  background: url(../images/Hero.jpg) no-repeat center /cover;
+}
+
+.about__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.reason-purchasing,
+.contact-info {
+  background-color: #F0F0F0;
+  padding-top: 50px;
+  padding-left: 40px;
+}
+
+.reason-purchasing {
+  width: 65%;
+  padding-right: 95px;
+  padding-bottom: 51px;
+}
+
+.contact-info {
+  width: 32%;
+  padding-right: 24px;
+}
+
+
+
+.about-text {
+  font-family: 'Rob_Rg';
+  font-size: 16px;
+  line-height: 27px;
+  /* 168.75% */
+}
+
+.about-title {
+  color: #4581B7;
+  font-family: 'Rob_Bd';
+  font-size: 20px;
+  padding-bottom: 25px;
+}
+
+.about__contact-box {
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 60px;
+}
+
+.footer {
+  padding-top: 30px;
+}
+
+.footer__box {
+  padding: 15px 40px;
+  background-color: #F0F0F0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.footer__contact-phone {
+  font-family: 'Rob_Bd';
+  font-size: 25px;
+}
+
+@media (max-width: 1140px) {
+  .about__box {
+
+    justify-content: center;
+  }
+
+  .reason-purchasing,
+  .contact-info {
+    width: 100%;
+    padding-right: 30px;
+    padding-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .footer__box {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .footer__contact {
+    align-items: center;
+  }
+}
